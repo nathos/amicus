@@ -1,3 +1,6 @@
+# Haml options
+set :haml, { :format => :html5 }
+
 # CodeRay syntax highlighting in Haml
 # activate :code_ray
 
