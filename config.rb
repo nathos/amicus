@@ -25,10 +25,10 @@ helpers do
 end
 
 # Change the CSS directory
-set :css_dir, "css"
+# set :css_dir, "alternative_css_directory"
 
 # Change the JS directory
-set :js_dir, "js"
+# set :js_dir, "alternative_js_directory"
 
 # Change the images directory
 # set :images_dir, "alternative_image_directory"
