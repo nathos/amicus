@@ -26,7 +26,7 @@ git clone git://github.com/nathos/middleman-bootstrap.git mydirectory
 What cool stuff is in here?
 ---------------------------
 
-The default Haml layout is based on HTML5 Boilerplate, and is fully commented. (Don't worry, those comments aren't rendered out to your build directory)
+The default [Haml](http://haml-lang.com/) layout is based on HTML5 Boilerplate, and is fully commented. (Don't worry, those comments aren't rendered out to your build directory)
 
 You can enable either Blueprint or 960.gs grid systems by uncommenting the appropriate line in the main style.css.sass file. Each grid partial (```_960grid.sass``` or ```_blueprintgrid.sass```) includes a basic grid setup with comments.
 
