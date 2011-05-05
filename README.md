@@ -22,7 +22,9 @@ Then just download the [latest source](https://github.com/nathos/middleman-boots
 git clone git://github.com/nathos/middleman-bootstrap.git mydirectory
 ```
 
-Page templates and [Sass](http://sass-lang.com/) stylesheets are in the ```/views``` directory. Use ```mm-server``` to do your live development and ```mm-build``` to render your static file output. For full Middleman documentation, visit the [Middleman wiki](https://github.com/tdreyno/middleman/wiki).
+Page templates and [Sass](http://sass-lang.com/) stylesheets are in the ```/views/``` directory. Put your images and JavaScripts in the ```/public/``` directory. Use ```mm-server``` to do your live development and ```mm-build``` to render your static file output to the ```/build/``` directory. 
+
+For full Middleman documentation, visit the [Middleman wiki](https://github.com/tdreyno/middleman/wiki).
 
 
 What cool stuff is in here?
