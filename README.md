@@ -7,11 +7,11 @@ Middleman Bootstrap is my clean project starting point for the [Middleman](http:
 How do I use it?
 ----------------
 
-Just clone the repository down to your local machine:
-```git clone git://github.com/nathos/middleman-bootstrap.git mydirectory```
+Start my installing the [Middleman gem](http://rubygems.org/gems/middleman):
+```gem install middleman```
 
-and if you're going to version control your project, remove the remote
-```git remote rm origin```
+Then just download the [latest source](https://github.com/nathos/middleman-bootstrap/archives/master) or if you prefer, clone the bootstrap repository down to your local machine:
+```git clone git://github.com/nathos/middleman-bootstrap.git mydirectory```
 
 
 What cool stuff is in here?
