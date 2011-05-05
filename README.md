@@ -30,7 +30,7 @@ What cool stuff is in here?
 
 The default [Haml](http://haml-lang.com/) layout is based on HTML5 Boilerplate, and is fully commented. (Don't worry, those comments aren't rendered out to your build directory)
 
-You can enable either Blueprint or 960.gs grid systems by uncommenting the appropriate line in the main style.css.sass file. Each grid partial (```_960grid.sass``` or ```_blueprintgrid.sass```) includes a basic grid setup with comments.
+You can enable either Blueprint or 960.gs grid systems by uncommenting the appropriate line in the main ```style.css.sass``` file. Each grid partial (```_960grid.sass``` and ```_blueprintgrid.sass```) includes a basic grid setup with comments.
 
 
 Comments & Suggestions?
@@ -42,7 +42,7 @@ Send me a [message](https://github.com/nathos) or submit an [issue](https://gith
 License
 -------
 
-Following the lead of [HTML5 Boilerplate](http://html5boilerplate.com/) here...
+Following the lead of [HTML5 Boilerplate](https://github.com/paulirish/html5-boilerplate) here...
 
 Major components:
 
