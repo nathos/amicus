@@ -1,0 +1,43 @@
+// Uncomment the following constants to customize grid widths:
+
+// The default number of grid columns (default: 12)
+// $ninesixty-columns: 12 
+
+// The default overall grid width (default: 960px)
+// $ninesixty-grid-width: 960px  
+
+// The default gutter width (default: 20px)
+// $ninesixty-gutter-width: 20px 
+
+// 960.gs grid support requires the Chris Eppstein's Compass 960.gs plugin:
+// https://github.com/chriseppstein/compass-960-plugin for full documentation
+// "gem install compass-960-plugin" to use it
+@import "960/grid"
+
+.container
+  // mixin +grid-system if this element will contain columns
+  +grid-system
+  +clearfix
+
+header
+  // 1st level grid elements don't require +alpha or +omega mixins
+  +grid(12)
+
+#main-content
+  +grid(12)
+  .sidebar
+    +grid(3)
+    // mixin +alpha if a nested element is the first in a row
+    +alpha
+  .content
+    +grid(9)
+    // mixin +omega if a nested element is the last in a row
+    +omega
+  .content-full
+    +grid(12)
+    +alpha
+    +omega
+
+footer
+  +grid(12)
+
