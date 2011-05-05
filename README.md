@@ -1,5 +1,8 @@
-What is Middleman Bootstrap?
-============================
+Middleman Bootstrap
+===================
+
+What is it?
+-----------
 
 Middleman Bootstrap is my clean project starting point for the [Middleman](http://middlemanapp.com/) static site renderer. It includes [HTML5 Boilerplate](http://html5boilerplate.com/), your choice of [Blueprint](http://www.blueprintcss.org/tests/parts/grid.html) or [960.gs](http://960.gs/) grid systems, and lots of best practices.
 
@@ -7,11 +10,17 @@ Middleman Bootstrap is my clean project starting point for the [Middleman](http:
 How do I use it?
 ----------------
 
-Start my installing the [Middleman gem](http://rubygems.org/gems/middleman):
-```gem install middleman```
+Start by installing the [Middleman gem](http://rubygems.org/gems/middleman):
+
+```
+gem install middleman
+```
 
 Then just download the [latest source](https://github.com/nathos/middleman-bootstrap/archives/master) or if you prefer, clone the bootstrap repository down to your local machine:
-```git clone git://github.com/nathos/middleman-bootstrap.git mydirectory```
+
+```
+git clone git://github.com/nathos/middleman-bootstrap.git mydirectory
+```
 
 
 What cool stuff is in here?
