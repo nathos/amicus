@@ -13,21 +13,23 @@
 // Uncomment to use the +showgrid mixin
 // @import "blueprint/debug"
 
-body
-  .container
-    // mixin +container if this element will contain columns
-    +container
-  header
-    // set "true" if this is the last column in a row
-    +column(12, "true")
-  #main-content
-    +container
-    +column(8)
-    .content_left
-      +column(4)
-    .content_right
-      +column(4, "true")
-  #sidebar
-    +column(4, "true")
-  footer
-    +column(12, "true")
+.container
+  // mixin +container if this element will contain columns
+  +container
+  
+header
+  // set "true" if this is the last column in a row
+  +column(24, "true")
+  
+#main-content
+  +container
+  +column(24, "true")
+  .content
+    +column(18)
+  .sidebar
+    +column(6, "true")
+  .content-full
+    +column(24, "true")
+    
+footer
+  +column(24, "true")

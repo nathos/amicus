@@ -25,12 +25,12 @@ header
 
 #main-content
   +grid(12)
-  .sidebar
-    +grid(3)
-    // mixin +alpha if a nested element is the first in a row
-    +alpha
   .content
     +grid(9)
+    // mixin +alpha if a nested element is the last in a row
+    +alpha
+  .sidebar
+    +grid(3)
     // mixin +omega if a nested element is the last in a row
     +omega
   .content-full
