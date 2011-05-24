@@ -3,68 +3,70 @@
 /[if lt IE 7 ]         <html class="no-js ie6" lang="en">
 /[if IE 7 ]            <html class="no-js ie7" lang="en">
 /[if IE 8 ]            <html class="no-js ie8" lang="en">
-/[if (gte IE 9)|!(IE)] <html class="no-js" lang="en">
+
+<!--[if (gte IE 9)|!(IE)]!-->
+%html{:class => "no-js", :lang => "en"}
+  <!--<![endif]-->
+  %head
+    %meta{:charset => "utf-8"}
+
+    -# Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    -# Remove this if you use the .htaccess
+    %meta{'http-equiv' => "X-UA-Compatible", :content =>"IE=edge,chrome=1"}
+
+    -# Pull in the page title
+    = yield_content :head
   
-%head
-  %meta{:charset => "utf-8"}
+    %meta{:name => "description", :content => ""}
+    %meta{:name => "author", :content => ""}
 
-  -# Always force latest IE rendering engine (even in intranet) & Chrome Frame
-  -# Remove this if you use the .htaccess
-  %meta{'http-equiv' => "X-UA-Compatible", :content =>"IE=edge,chrome=1"}
+    -# Mobile viewport optimized: j.mp/bplateviewport
+    %meta{:name =>"viewport", :content => "width=device-width, initial-scale=1.0"}
 
-  -# Pull in the page title
-  = yield_content :head
-  
-  %meta{:name => "description", :content => ""}
-  %meta{:name => "author", :content => ""}
+    -# Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references
+    %link{:rel => "shortcut icon", :href => "/favicon.ico"}
+    %link{:rel => "apple-touch-icon", :href => "/apple-touch-icon.png"}
 
-  -# Mobile viewport optimized: j.mp/bplateviewport
-  %meta{:name =>"viewport", :content => "width=device-width, initial-scale=1.0"}
+    -# CSS: implied media="all"
+    %link{:rel => "stylesheet", :href => "stylesheets/style.css?v=2"}
 
-  -# Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references
-  %link{:rel => "shortcut icon", :href => "/favicon.ico"}
-  %link{:rel => "apple-touch-icon", :href => "/apple-touch-icon.png"}
+    -# Uncomment if you are specifically targeting less enabled mobile browsers
+    -# %link{:rel => "stylesheet", :media => "handheld", :href => "css/handheld.css?v=2"}
 
-  -# CSS: implied media="all"
-  %link{:rel => "stylesheet", :href => "stylesheets/style.css?v=2"}
+    -# All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects
+    %script{:src => "javascripts/libs/modernizr-1.7.min.js"}
 
-  -# Uncomment if you are specifically targeting less enabled mobile browsers
-  -# %link{:rel => "stylesheet", :media => "handheld", :href => "css/handheld.css?v=2"}
-
-  -# All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects
-  %script{:src => "javascripts/libs/modernizr-1.7.min.js"}
-
-%body
-  #container
-    %header
-    #main-content{:role => "main"}
+  %body
+    #container
+      %header
+      #main-content{:role => "main"}
     
-      = yield
+        = yield
 
-    %footer
+      %footer
 
-  -# JavaScript at the bottom for fast page loading
+    -# JavaScript at the bottom for fast page loading
 
-  -# Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
-  %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"}
-  :javascript
-    window.jQuery || document.write("<script src='javascripts/libs/jquery-1.5.1.min.js'>\x3C/script>")
-
-
-  -# scripts concatenated and minified via ant build script
-  %script{:src => "javascripts/plugins.js"}
-  %script{:src => "javascripts/script.js"}
-
-
-  /[if lt IE 7 ]
-    %script{:src => "javascripts/libs/dd_belatedpng.js"}
+    -# Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"}
     :javascript
-      DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb
+      window.jQuery || document.write("<script src='javascripts/libs/jquery-1.5.1.min.js'>\x3C/script>")
 
 
-  -# mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID
-  :javascript
-    var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-    s.parentNode.insertBefore(g,s)}(document,"script"));
+    -# scripts concatenated and minified via ant build script
+    %script{:src => "javascripts/plugins.js"}
+    %script{:src => "javascripts/script.js"}
+
+
+    /[if lt IE 7 ]
+      %script{:src => "javascripts/libs/dd_belatedpng.js"}
+      :javascript
+        DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb
+
+
+    -# mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID
+    :javascript
+      var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g,s)}(document,"script"));
