@@ -54,6 +54,8 @@ Major components:
 * YUI Profiling: BSD license
 * HTML5Doctor CSS reset: Public Domain
 * CSS Reset Reloaded: Public Domain
+* Blueprint CSS: MIT license
+* 960.gs MIT/GPL license
 
 Everything else:
 
