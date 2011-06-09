@@ -55,7 +55,7 @@ Major components:
 * HTML5Doctor CSS reset: Public Domain
 * CSS Reset Reloaded: Public Domain
 * Blueprint CSS: MIT license
-* 960.gs MIT/GPL license
+* 960.gs: MIT/GPL license
 
 Everything else:
 
