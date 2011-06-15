@@ -1,6 +1,9 @@
 # Haml options
 set :haml, { :format => :html5 }
 
+# HTML5 Boilerplate gem: https://github.com/sporkd/compass-html5-boilerplate
+require 'html5-boilerplate'
+
 # Compass 960.gs support
 # require 'ninesixty'
 

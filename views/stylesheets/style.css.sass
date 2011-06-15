@@ -1,11 +1,22 @@
 @import "compass"
 
-// HTML5 Boilerplate Colors
-//  edit, but don't remove these
-$h5bp-text-selection: #FF5E99
-$h5bp-webkit-tap:     #FF5E99
+// HTML5 Boilerplate Colors; uncomment to override defaults
+// $font-color: #444
+// $link-color: #607890
+// $link-hover-color: #036
+// $link-active-color: #607890
+// $link-visited-color: #607890
+// $selected-font-color: #fff
+// $selected-background-color: #ff5e99
+// $list-left-margin: 1.8em
 
-@import "html5boilerplate/main"
+// Load the HTML5 Boilerplate Compass Extension
+@import "html5-boilerplate"
+
+// The default HTML Boilerplate mixins
+@include html5-boilerplate-reset
+@include html5-boilerplate-fonts
+@include html5-boilerplate-styles
 
 // Uncomment to use Blueprint Grid System
 // @import "blueprintgrid"
@@ -19,5 +30,8 @@ $h5bp-webkit-tap:     #FF5E99
 
 
 
+
 // These imports should remain below the bulk of the stylesheet so they can override correctly.
-@import "html5boilerplate/nonsemantichelpers", "html5boilerplate/mediaqueries"
+
+// Uncomment to use the non-semantic helpers
+// @include html5-boilerplate-helpers
