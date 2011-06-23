@@ -34,6 +34,8 @@ The default [Haml](http://haml-lang.com/) layout is based on HTML5 Boilerplate, 
 
 You can enable either Blueprint or 960.gs grid systems by uncommenting the appropriate line in the main ```style.css.sass``` file. Each grid partial (```_960grid.sass``` and ```_blueprintgrid.sass```) includes a basic grid setup with comments.
 
+960.gs requires that you uncomment a line in the ```config.rb``` as well.
+
 
 Comments & Suggestions?
 -----------------------
