@@ -1,14 +1,12 @@
-Middleman Bootstrap
-===================
+# Middleman Bootstrap
 
-What is it?
------------
+
+## What is it?
 
 Middleman Bootstrap is my clean project starting point for the [Middleman](http://middlemanapp.com/) static site renderer. It includes [HTML5 Boilerplate](http://html5boilerplate.com/), your choice of [Blueprint](http://www.blueprintcss.org/tests/parts/grid.html) or [960.gs](http://960.gs/) grid systems, and lots of best practices.
 
 
-How do I use it?
-----------------
+## How do I use it?
 
 Start by installing the [Middleman gem](http://rubygems.org/gems/middleman):
 
@@ -27,8 +25,7 @@ Page templates and [Sass](http://sass-lang.com/) stylesheets are in the ```/view
 For full Middleman documentation, visit the [Middleman wiki](https://github.com/tdreyno/middleman/wiki).
 
 
-What cool stuff is in here?
----------------------------
+## What cool stuff is in here?
 
 The default [Haml](http://haml-lang.com/) layout is based on HTML5 Boilerplate, and is fully commented. (Don't worry, those comments aren't rendered out to your build directory)
 
@@ -37,14 +34,12 @@ You can enable either Blueprint or 960.gs grid systems by uncommenting the appro
 (Note: 960.gs requires that you uncomment a line in  ```config.rb``` as well)
 
 
-Comments & Suggestions?
------------------------
+## Comments & Suggestions?
 
 Send me a [message](https://github.com/nathos) or submit an [issue](https://github.com/nathos/middleman-bootstrap/issues). Thanks!
 
 
-License
--------
+## License
 
 Following the lead of [HTML5 Boilerplate](https://github.com/paulirish/html5-boilerplate) here...
 
