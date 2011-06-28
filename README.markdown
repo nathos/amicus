@@ -47,7 +47,7 @@ Major components:
 
 * Modernizr: MIT/BSD license
 * jQuery: MIT/GPL license
-* DD_belatedPNG: MIT license
+* Respond.js: MIT/GPL license
 * YUI Profiling: BSD license
 * HTML5Doctor CSS reset: Public Domain
 * CSS Reset Reloaded: Public Domain
