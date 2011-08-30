@@ -1,0 +1,54 @@
+//
+// Main Stylesheet
+//
+
+@import "compass"
+
+// HTML5 Boilerplate Colors - uncomment to override defaults
+// $h5bp-text-selection: #fe57a1
+// $h5bp-webkit-tap:     #fe57a1
+// $h5bp-link:           #00e
+// $h5bp-link-hover:     #06e
+// $h5bp-link-visited:   #551a8b
+
+@import "partials/h5bp/main"
+
+// Blueprint Grid System:
+// @import "partials/grid/blueprint"
+
+// 960.gs Grid System:
+// * remember to uncomment "require 'ninesixty'" in config.rb 
+// * and "gem 'compass-960-plugin'" in the Gemfile!
+// @import "partials/grid/960gs"
+
+// Susy Grid System:
+// * remember to uncomment "require 'susy'" in config.rb 
+// * and "gem 'compass-susy-plugin'" in the Gemfile!
+// @import "partials/grid/susy"
+
+
+// Your own styles go here.
+
+
+.newproject
+  margin: 0 auto
+  min-width: 300px
+  max-width: 600px
+  padding: 0 150px
+  h1
+    color: #999
+    text-transform: uppercase
+    padding-top: 15px
+  p
+    line-height: 1.5em
+  kbd
+    background-color: #f5f5f5
+    border: 1px solid #dedede
+    padding: 0px 3px 2px
+  footer
+    margin-top: 3em
+    text-align: right
+
+
+// These imports should remain below the bulk of the stylesheet so they can override correctly.
+@import "partials/h5bp/nonsemantichelpers", "partials/h5bp/mediaqueries"

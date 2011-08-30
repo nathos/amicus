@@ -19,16 +19,15 @@
 // ==========================================================================
  
 @media print
-  // Black prints faster: sanbeiji.com/archives/953
-  a, a:visited
-    color: #444 !important
-    text-decoration: underline
+  // Black prints faster: h5bp.com/s
   *
     background: transparent !important
     color: black !important
     text-shadow: none !important
     filter: none !important
     -ms-filter: none !important
+  a, a:visited
+    text-decoration: underline
   a[href]:after
     content: " (" attr(href) ")"
   abbr[title]:after
@@ -40,7 +39,7 @@
     border: 1px solid #999
     page-break-inside: avoid
   thead
-    // css-discuss.incutio.com/wiki/Printing_Tables
+    // h5bp.com/t
     display: table-header-group
   tr, img
     page-break-inside: avoid

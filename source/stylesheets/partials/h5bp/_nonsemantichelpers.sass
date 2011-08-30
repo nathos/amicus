@@ -6,22 +6,22 @@
 // For image replacement
 .ir
   display: block
+  border: 0
   text-indent: -999em
   overflow: hidden
+  background-color: transparent
   background-repeat: no-repeat
   text-align: left
   direction: ltr
   br
     display: none
 
-// Hide for both screenreaders and browsers:
-// css-discuss.incutio.com/wiki/Screenreader_Visibility
+// Hide from both screenreaders and browsers: h5bp.com/u
 .hidden
-  display: none
+  display: none !important
   visibility: hidden
 
-// Hide only visually, but have it available for screenreaders: by Jon Neal.
-// www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
 .visuallyhidden
   border: 0
   clip: rect(0 0 0 0)
@@ -32,7 +32,7 @@
   position: absolute
   width: 1px
 
-  // Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638
+  // Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
   &.focusable:active, &.focusable:focus
     clip: auto
     height: auto

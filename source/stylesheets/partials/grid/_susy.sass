@@ -1,0 +1,66 @@
+// 
+// Susy Grid System
+// 
+
+// If you want to use Susy, be sure to enable it in compass.config & the Gemfile
+
+// Uncomment the following constants to customize grid widths
+// You can use ems, px or %:
+
+// The number of grid columns (default: 12)
+// $total-cols: 12
+
+// The column width (default: 4em)
+// $col-width: 4em
+
+// The gutter width (default: 1em)
+// $gutter-width: 1em
+
+// The outer side-gutter width (default: $gutter-width)
+// $side-gutter-width: $gutter-width
+
+// Show grid background stripes
+// $show-grid-backgrounds: true
+
+
+@import "susy"
+
+.container
+  // mixin +container if this element will contain a grid system
+  +container
+  +susy-grid-background
+  
+header
+  // mixin +full for a full grid width row - it's a shortcut!
+  +full
+  
+  // * ALTERNATIVELY *
+  
+  // mixin +columns(# of columns)
+  // +columns(12)
+  
+  // mixin +alpha at the start of every root context row (not needed if using +full)
+  // +alpha
+  
+  // mixin +omega if an element is the last in a row (not needed if using +full)
+  // +omega
+  
+#main-content
+  +full
+  .content
+    // pass a context (the parent # of columns) if element is nested
+    +grid(9, 12)
+  .sidebar
+    +grid(3, 12)
+    // pass a context to +omega if element is nested
+    +omega(12)
+  .content-full
+    // pass a context to +full if element is nested
+    +full(12)
+
+footer
+  +full
+  // easily pad columns with +pad(left, right)
+  +pad(3,3)
+  
+

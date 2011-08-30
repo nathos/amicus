@@ -1,29 +1,71 @@
-# Haml options
-set :haml, { :format => :html5 }
+### 
+# Compass
+###
 
-# Compass 960.gs support
+# 960.gs grids in Compass
+# First: gem install compass-960-plugin
 # require 'ninesixty'
 
+# Susy grids in Compass
+# First: gem install compass-susy-plugin
+# require 'susy'
+
+# Change Compass configuration
+# compass_config do |config|
+#   config.output_style = :compact
+# end
+
+###
+# Haml
+###
+
 # CodeRay syntax highlighting in Haml
-# activate :code_ray
+# First: gem install haml-coderay
+# require 'haml-coderay'
 
-# Automatic sitemaps (gem install middleman-slickmap)
-# require "middleman-slickmap"
-# activate :slickmap
+# CoffeeScript filters in Haml
+# First: gem install coffee-filter
+# require 'coffee-filter'
 
-# Automatic image dimension calculations
+# Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
-# Per-page layout changes
+###
+# Page command
+###
+
+# Per-page layout changes:
+# 
 # With no layout
 # page "/path/to/file.html", :layout => false
+# 
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
+# 
+# A path which all have the same layout
+# with_layout :admin do
+#   page "/admin/*"
+# end
 
+# Proxy (fake) files
+# page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
+#   @which_fake_page = "Rendering a fake page with a variable"
+# end
+
+###
 # Helpers
+###
+
+# Methods defined in the helpers block are available in templates
 helpers do
-  def some_helper(*args)
-    "Helping"
+  # Calculate the years for a copyright
+  def copyright_years(start_year)
+    end_year = Date.today.year
+    if start_year == end_year
+      start_year.to_s
+    else
+      start_year.to_s + '-' + end_year.to_s
+    end
   end
 end
 
@@ -50,12 +92,10 @@ configure :build do
   # Use relative URLs
   # activate :relative_assets
   
-  # Compress PNGs after build (gem install middleman-smusher)
+  # Compress PNGs after build
+  # First: gem install middleman-smusher
   # require "middleman-smusher"
   # activate :smusher
-
-  # Generate ugly/obfuscated HTML from Haml
-  # activate :ugly_haml
   
   # Or use a different image path
   # set :http_path, "/Content/images/"
