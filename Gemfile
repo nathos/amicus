@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'middleman', '2.0.7'
+gem "middleman", "~>2.0.7"
 
 # Compass plugins
 # gem 'compass-960-plugin' # 960.gs

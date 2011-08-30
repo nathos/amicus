@@ -85,4 +85,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman (= 2.0.7)
+  middleman (~> 2.0.7)

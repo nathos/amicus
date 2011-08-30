@@ -8,30 +8,43 @@ Middleman Bootstrap is my clean project starting point for the [Middleman](http:
 
 ## How do I use it?
 
-Start by installing the [Middleman gem](http://rubygems.org/gems/middleman):
+Start by installing [Bundler](http://gembundler.com/):
 
 ```
-gem install middleman
+gem install bundler
 ```
 
-Then just download the [latest source](https://github.com/nathos/middleman-bootstrap/archives/master) or if you prefer, clone the bootstrap repository down to your local machine:
+Then just download the [latest bootstrap source](https://github.com/nathos/middleman-bootstrap/archives/master) or if you prefer, clone the bootstrap repository down to your local machine:
 
 ```
 git clone git://github.com/nathos/middleman-bootstrap.git mydirectory
 ```
 
-Page templates and [Sass](http://sass-lang.com/) stylesheets are in the ```/views/``` directory. Put your images and JavaScripts in the ```/public/``` directory. Use ```mm-server``` to do your live development and ```mm-build``` to render your static file output to the ```/build/``` directory. 
+Finally, do a ```bundle install``` to install the required gems.
 
-For full Middleman documentation, visit the [Middleman wiki](https://github.com/tdreyno/middleman/wiki).
+Page templates and [Sass](http://sass-lang.com/) stylesheets are in the ```/views/``` directory. Put your images and JavaScripts in the ```/public/``` directory. Use ```middleman server``` to do your live development and ```middleman build``` to render your static file output to the ```/build/``` directory. 
 
+For full Middleman documentation, visit the [Middleman website](http://middlemanapp.com/).
 
-## What cool stuff is in here?
+## Middleman 2.0 Template
+
+Middleman 2.0 now supports project templates. To use Middleman Bootstrap as a template, clone the Git repository into ```~/.middleman```, like so:
+
+```git clone git://github.com/nathos/middleman-bootstrap.git ~/.middleman/mm-bootstrap```
+
+then use the new template argument for the ```middleman init``` command:
+
+```middleman init my_new_project --template=mm-bootstrap```
+
+Easy peasy!
+
+## What other cool stuff is in here?
 
 The default [Haml](http://haml-lang.com/) layout is based on HTML5 Boilerplate, and is fully commented. (Don't worry, those comments aren't rendered out to your build directory)
 
-You can enable either Blueprint or 960.gs grid systems by uncommenting the appropriate line in the main ```style.css.sass``` file. Each grid partial (```_960grid.sass``` and ```_blueprintgrid.sass```) includes a basic grid setup with comments.
+You can enable either 960.gs or Susy grid systems by uncommenting the appropriate line in ```config.rb``` and the main ```screen.css.sass``` file. Each grid partial (```_960gs.sass``` and ```_susy.sass```) includes a basic grid setup with comments.
 
-(Note: 960.gs requires that you uncomment a line in  ```config.rb``` as well)
+(Note: You can use the Blueprint grid system just by uncommenting the appropriate line in ```screen.css.sass```.)
 
 
 ## Comments & Suggestions?
