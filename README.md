@@ -22,7 +22,7 @@ git clone git://github.com/nathos/middleman-bootstrap.git mydirectory
 
 Finally, do a ```bundle install``` to install the required gems.
 
-Page templates and [Sass](http://sass-lang.com/) stylesheets are in the ```/views/``` directory. Put your images and JavaScripts in the ```/public/``` directory. Use ```middleman server``` to do your live development and ```middleman build``` to render your static file output to the ```/build/``` directory. 
+Use ```middleman server``` to do your live development and ```middleman build``` to render your static file output to the ```/build/``` directory. 
 
 For full Middleman documentation, visit the [Middleman website](http://middlemanapp.com/).
 
