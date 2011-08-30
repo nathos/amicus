@@ -3,12 +3,12 @@
 
 ## What is it?
 
-Middleman Bootstrap is my clean project starting point for the [Middleman](http://middlemanapp.com/) static site renderer. It includes [HTML5 Boilerplate](http://html5boilerplate.com/), your choice of [Blueprint](http://www.blueprintcss.org/tests/parts/grid.html) or [960.gs](http://960.gs/) grid systems, and lots of best practices.
+Middleman Bootstrap is my clean project starting point for the [Middleman](http://middlemanapp.com/) static site renderer. It includes [HTML5 Boilerplate](http://html5boilerplate.com/), Haml, Sass, Compass, your choice of grid frameworks, and lots of best practices.
 
 
 ## How do I use it?
 
-Start by installing [Bundler](http://gembundler.com/):
+Start by installing [Bundler](http://gembundler.com/), if you don't already have it:
 
 ```
 gem install bundler
@@ -26,7 +26,8 @@ Page templates and [Sass](http://sass-lang.com/) stylesheets are in the ```/view
 
 For full Middleman documentation, visit the [Middleman website](http://middlemanapp.com/).
 
-## Middleman 2.0 Template
+
+## Middleman 2.0 Template - NEW!
 
 Middleman 2.0 now supports project templates. To use Middleman Bootstrap as a template, clone the Git repository into ```~/.middleman```, like so:
 
@@ -38,11 +39,12 @@ then use the new template argument for the ```middleman init``` command:
 
 Easy peasy!
 
+
 ## What other cool stuff is in here?
 
 The default [Haml](http://haml-lang.com/) layout is based on HTML5 Boilerplate, and is fully commented. (Don't worry, those comments aren't rendered out to your build directory)
 
-You can enable either 960.gs or Susy grid systems by uncommenting the appropriate line in ```config.rb``` and the main ```screen.css.sass``` file. Each grid partial (```_960gs.sass``` and ```_susy.sass```) includes a basic grid setup with comments.
+You can enable either 960.gs or Susy grid systems by uncommenting the appropriate line in ```config.rb``` and the main ```screen.css.sass``` file. Each grid partial (```_960gs.sass```, ```_susy.sass```, ```_blueprint.sass```) includes a basic grid setup with comments.
 
 (Note: You can use the Blueprint grid system just by uncommenting the appropriate line in ```screen.css.sass```.)
 
