@@ -1,4 +1,4 @@
-# Middleman Bootstrap
+# Middleman 2.0 Bootstrap
 
 
 ## What is it?
