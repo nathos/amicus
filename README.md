@@ -31,7 +31,7 @@ For full Middleman documentation, visit the [Middleman website](http://middleman
 
 Middleman 2.0 now supports project templates. To use Middleman Bootstrap as a template, clone the Git repository into ```~/.middleman```, like so:
 
-```git clone git://github.com/nathos/middleman-bootstrap.git ~/.middleman/mm-bootstrap```
+```git clone http://github.com/nathos/middleman-bootstrap.git ~/.middleman/mm-bootstrap```
 
 then use the new template argument for the ```middleman init``` command:
 
