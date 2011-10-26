@@ -17,7 +17,7 @@ gem install bundler
 Then just download the [latest bootstrap source](https://github.com/nathos/middleman-bootstrap/archives/master) or if you prefer, clone the bootstrap repository down to your local machine:
 
 ```
-git clone git://github.com/nathos/middleman-bootstrap.git my_new_project
+git clone http://github.com/nathos/middleman-bootstrap.git my_new_project
 ```
 
 Finally, do a ```bundle install``` to install the required gems -- even Middleman itself!
