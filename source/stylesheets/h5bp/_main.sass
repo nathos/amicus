@@ -1,11 +1,11 @@
-// converted from HTML5 Boilerplate v2.0 - 08/10/2011
+// converted from HTML5 Boilerplate v2.0 - 12/01/2011
 
 // Default colors
-$h5bp-text-selection: #fe57a1 !default
-$h5bp-webkit-tap:     #fe57a1 !default
-$h5bp-link:           #00e !default
-$h5bp-link-hover:     #06e !default
-$h5bp-link-visited:   #551a8b !default
+$h5bp-text-selection : #fe57a1 !default
+$h5bp-webkit-tap     : #fe57a1 !default
+$h5bp-link           : #00e !default
+$h5bp-link-hover     : #06e !default
+$h5bp-link-visited   : #551a8b !default
 
 // HTML5 ✰ Boilerplate
 // 
@@ -46,8 +46,8 @@ html
 
 body
   margin: 0
-  font-size: 13px
-  line-height: 1.231
+  font-size: 1em
+  line-height: 1.4
 
 body, button, input, select, textarea
   font-family: sans-serif
@@ -227,21 +227,19 @@ button, input, select, textarea
 // 2. Correct inner spacing displayed oddly in IE6/7
 button, input
   line-height: normal
-  *overflow: visible
-  
-// Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
-table button, table input
-  *overflow: auto
+
 
 // 1. Display hand cursor for clickable form elements
 // 2. Allow styling of clickable form elements in iOS
 button, input[type="button"], input[type="reset"], input[type="submit"]
   cursor: pointer
   -webkit-appearance: button
+  *overflow: visible
 
 // Consistent box sizing and appearance
 input[type="checkbox"], input[type="radio"]
   box-sizing: border-box
+  padding: 0
 input[type="search"]
   -webkit-appearance: textfield
   -moz-box-sizing: content-box

@@ -1,7 +1,7 @@
 source :rubygems
 
-gem "middleman", "~>2.0.13"
+gem "middleman", "~>2.0.14"
 
 # Compass plugins
+gem 'compass-susy-plugin' # Susy
 # gem 'compass-960-plugin' # 960.gs
-# gem 'compass-susy-plugin' # Susy

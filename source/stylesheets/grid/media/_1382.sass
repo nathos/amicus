@@ -1,0 +1,15 @@
+// 1382 grid -----------------------------------------------------------------
+
+// Define grid constants. These can be customized for each breakpoint: 
+// $total-cols         : 6
+// You can use ems, px or % to override these defaults:
+// $col-width          : 4em
+// $gutter-width       : 1em
+// $side-gutter-width  : 1em
+
+// We have to add these mixins again to use our redefined grid constants.
+.container
+  // mixin +container if this element will contain a grid system
+  +container
+  // gives us our background stripes for development.
+  +susy-grid-background

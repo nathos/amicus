@@ -2,13 +2,12 @@
 # Compass
 ###
 
+# Susy grids in Compass
+require 'susy'
+
 # 960.gs grids in Compass
 # First: gem install compass-960-plugin
 # require 'ninesixty'
-
-# Susy grids in Compass
-# First: gem install compass-susy-plugin
-# require 'susy'
 
 # Change Compass configuration
 # compass_config do |config|

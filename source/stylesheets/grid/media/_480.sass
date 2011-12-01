@@ -1,0 +1,24 @@
+// 480 grid ------------------------------------------------------------------
+
+// NOTE: Remember, since this is a mobile-first design, your styles here will
+//       cascade up to larger screen widths.
+
+// Define grid constants. These can be customized for each breakpoint: 
+$total-cols         : 4
+// You can use ems, px or % to override these defaults:
+$col-width          : 6em
+$gutter-width       : 2em
+// $side-gutter-width  : 1em
+
+.container
+  // mixin +container if this element will contain a grid system
+  +container
+  // gives us our background stripes for development.
+  +susy-grid-background
+  // remove the non-grid padding:
+  padding: 0
+  
+header, #main-content, footer
+  // mixin +full for a full grid width row - it's a shortcut!
+  +full
+

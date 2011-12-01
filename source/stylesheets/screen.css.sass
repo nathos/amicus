@@ -11,44 +11,73 @@
 // $h5bp-link-hover:     #06e
 // $h5bp-link-visited:   #551a8b
 
-@import "partials/h5bp/main"
+// HTML5 Boilerplate Styles
+@import "h5bp/main"
+
+// some padding around the gridless container, will be overriden by media queries
+.container
+  padding: 0 20px
+  
+// Susy Grid System:
+@import "grid/susygrid"
 
 // Blueprint Grid System:
-// @import "partials/grid/blueprint"
+// @import "grid/blueprint"
 
 // 960.gs Grid System:
 // * remember to uncomment "require 'ninesixty'" in config.rb 
 // * and "gem 'compass-960-plugin'" in the Gemfile!
-// @import "partials/grid/960gs"
-
-// Susy Grid System:
-// * remember to uncomment "require 'susy'" in config.rb 
-// * and "gem 'compass-susy-plugin'" in the Gemfile!
-// @import "partials/grid/susygrid"
+// @import "grid/960gs"
 
 
 // Your own styles go here.
 
-
-.newproject
-  margin: 0 auto
-  min-width: 300px
-  max-width: 600px
-  padding: 0 150px
-  h1
-    color: #999
-    text-transform: uppercase
-    padding-top: 15px
-  p
-    line-height: 1.5em
-  kbd
-    background-color: #f5f5f5
-    border: 1px solid #dedede
-    padding: 0px 3px 2px
-  footer
-    margin-top: 3em
-    text-align: right
+h1
+  color: #999
+  text-transform: uppercase
+  line-height: 1em
+h2
+  line-height: 1.3em
+kbd
+  background-color: #f5f5f5
+  border: 1px solid #dedede
+  padding: 0px 3px 2px
+footer
+  margin-top: 3em
+  text-align: right
 
 
-// These imports should remain below the bulk of the stylesheet so they can override correctly.
-@import "partials/h5bp/nonsemantichelpers", "partials/h5bp/mediaqueries"
+// Media queries for our supported screen widths.
+// Comment out any widths (breakpoints) you don't intend to support.
+// 
+// Use these imports for everything except grid definitions. 
+// Put those in the /grid/media/*.sass partials
+
+// 480px ---------------------------------------------------------------------
+@media only screen and (min-width: 480px)
+  @import "media/480"
+
+// 600px ---------------------------------------------------------------------
+@media only screen and (min-width: 600px)
+  @import "media/600"
+
+// 768px ---------------------------------------------------------------------
+@media only screen and (min-width: 768px)
+  @import "media/768"
+
+// 992px ---------------------------------------------------------------------
+@media only screen and (min-width: 992px)
+  @import "media/992"
+
+// 1382px --------------------------------------------------------------------
+@media only screen and (min-width: 1382px)
+  @import "media/1382"
+
+// 2x - uncomment if you're optimizing for Retina displays -------------------
+// @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)
+//   @import "media/2x"
+
+
+// HTML5 Boilerplate print styles 
+// (apparently deprecated, but I still think there's good stuff in here)
+@import "h5bp/print"

@@ -1,9 +1,16 @@
-# Middleman 2.0 Bootstrap
+# Middleman Bootstrap
 
 
 ## What is it?
 
-Middleman Bootstrap is my clean project starting point for the [Middleman](http://middlemanapp.com/) static site renderer. It includes [HTML5 Boilerplate](http://html5boilerplate.com/), [Haml](http://haml-lang.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), your choice of grid frameworks, and lots of best practices.
+Middleman Bootstrap is my clean project starting point for the [Middleman](http://middlemanapp.com/) static site renderer. It includes [HTML5 Boilerplate](http://html5boilerplate.com/), [Haml](http://haml-lang.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), a Mobile-first 
+Responsive [Susy](http://susy.oddbird.net/) grid system, and lots of best practices.
+
+## Now it's Responsive!
+
+Middleman Bootstrap now comes with a Mobile-first Responsive grid system by default. Inspired by [320 and up](http://www.stuffandnonsense.co.uk/projects/320andup/) and [320+Susy](http://susy.oddbird.net/susy320/), the basic skeleton for a fully responsive layout is ready for you to use in your projects.
+
+Put your responsive grid declarations in the ```/stylesheets/grid/media/``` partials, and your width-specific styles in the ```/stylesheets/media/``` partials. Remember, it's mobile-first, so your styles cascade *up* with larger browser widths.
 
 
 ## How do I use it?
@@ -27,7 +34,7 @@ Use ```middleman server``` to do your live development and ```middleman build```
 For full Middleman documentation, visit the [Middleman website](http://middlemanapp.com/).
 
 
-## Middleman 2.0 Template - NEW!
+## Middleman 2.0 Template
 
 Middleman 2.0 now supports project templates. To use Middleman Bootstrap as a template, clone the Git repository into ```~/.middleman```, like so:
 
@@ -44,9 +51,11 @@ Easy peasy!
 
 The default [Haml](http://haml-lang.com/) layout is based on [HTML5 Boilerplate](http://html5boilerplate.com/), and is fully commented. (Don't worry, those comments aren't rendered out to your build directory)
 
-You can enable either [960.gs](http://960.gs/) or [Susy](http://susy.oddbird.net/) grid systems by uncommenting the appropriate lines in ```config.rb``` and the main ```screen.css.sass``` file. Each grid partial (```_960gs.sass```, ```_susy.sass```, ```_blueprint.sass```) includes a basic grid setup with comments.
+[Susy](http://susy.oddbird.net/) is the default grid system. However, you can enable the  [960.gs](http://960.gs/) grid system by uncommenting the appropriate lines in ```config.rb``` and the main ```screen.css.sass``` file. The other grid partials (```_960gs.sass``` & ```_blueprint.sass```) include a basic grid setup with comments.
 
 (Note: Blueprint is built into Compass, so you can use its grid system just by uncommenting the appropriate ```@import``` line in ```screen.css.sass```.)
+
+I've taken a shine to Resonsive Design and the Susy flexible grid system, so I may deprecate Blueprint & 960.gs in a future version.
 
 
 ## Comments & Suggestions?
@@ -68,6 +77,7 @@ Major components:
 * CSS Reset Reloaded: Public Domain
 * Blueprint CSS: MIT license
 * 960.gs: MIT/GPL license
+* Susy: MIT license
 
 Everything else:
 
