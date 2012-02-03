@@ -1,0 +1,45 @@
+// 
+// Mobile-first Responsive Susy Grid System
+// 
+
+$show-grid-backgrounds: true
+
+@import "susy"
+
+// Our sub-480px layout will not use a grid at all. Customize the media
+// query partials to start building your grids.
+
+
+// For full Susy documentation, visit: http://susy.oddbird.net/tutorial/
+
+
+// some padding around the gridless container, will be overriden by media queries
+.container
+  padding: 0 20px
+
+
+// Media queries for our supported screen widths.
+// Comment out any widths (breakpoints) you don't intend to support.
+// 
+// Use these imports for grid definitions only. Other targeted styles will go
+// in our /media/*.sass partials
+
+// 480px ---------------------------------------------------------------------
+@media only screen and (min-width: 480px)
+  @import "media/480"
+
+// 600px ---------------------------------------------------------------------
+@media only screen and (min-width: 600px)
+  @import "media/600"
+
+// 768px ---------------------------------------------------------------------
+@media only screen and (min-width: 768px)
+  @import "media/768"
+
+// 992px ---------------------------------------------------------------------
+@media only screen and (min-width: 992px)
+  @import "media/992"
+
+// 1382px --------------------------------------------------------------------
+@media only screen and (min-width: 1382px)
+  @import "media/1382"
