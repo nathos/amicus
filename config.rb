@@ -62,6 +62,12 @@ helpers do
       start_year.to_s + '-' + end_year.to_s
     end
   end
+
+  # Holder.js image placeholder helper
+  def img_holder(width, height)
+    "<img data-src='holder.js/#{width}x#{height}'>"
+  end
+
 end
 
 # Change the CSS directory
