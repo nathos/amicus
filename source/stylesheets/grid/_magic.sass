@@ -8,42 +8,73 @@ $show-grid-backgrounds: true
 
 // For full Susy documentation, visit: http://susy.oddbird.net/tutorial/
 
-
 // Define mobile-first grid constants.
-$total-columns      : 7
-// You can use ems, px or % to override these defaults.
-$column-width       : 4em
-$gutter-width       : 1em
-$grid-padding       : $gutter-width
+$total-columns      : 6
+// You can use ems, px or % to define the grid.
+$column-width       : 60px
+$gutter-width       : 20px
+$grid-padding       : $gutter-width / 2
 
-// Define breakpoint(s), in this case, when there's room for 12 columns
-$break: 12
+// Define breakpoints, in this case when there's room for the specified columns.
+$break-tablet:   8
+$break-desktop: 12
+$break-huge:    16
 
 .container
   // Include `container` if this element will contain a grid system.
-  @include container($total-columns, $break)
+  @include container($total-columns)
   // Apply our grid background stripes for development.
   @include susy-grid-background
 
 header, #main-content, footer
-  // clearfix for full-width elements
+  // Clearfix for full-width elements
   @include clearfix
 
-@include at-breakpoint($break)
-  .container
-    // re-apply the grid background for the breakpoint.
-    @include susy-grid-background
+// Automatically reset the grid width & re-apply the grid background
+// to responsive layouts.
+$layouts: $break-tablet, $break-desktop, $break-huge
+@if $show-grid-backgrounds == true
+  @each $layout in $layouts
+    @include at-breakpoint($layout)
+      .container
+        @include set-container-width
+        @include susy-grid-background
+
+@include at-breakpoint($break-tablet)
   .features
-    @include span-columns(9, $break)
+    @include span-columns(8)
+    .views-layouts
+      @include span-columns(4, 8)
+    .stylesheets-sass-compass
+      @include span-columns(4 omega, 8)
+    .compass-plugins
+      @include span-columns(4, 8)
+  .moreinfo
+    @include span-columns(8 omega, 8)
+
+@include at-breakpoint($break-desktop)
+  .features
+    @include span-columns(9, 12)
     .views-layouts
       @include span-columns(3, 9)
     .stylesheets-sass-compass
       @include span-columns(3, 9)
     .compass-plugins
       @include span-columns(3 omega, 9)
-
   .moreinfo
-    @include span-columns(3 omega, $break)
+    @include span-columns(3 omega, 12)
+
+@include at-breakpoint($break-huge)
+  .features
+    @include span-columns(12, 16)
+    .views-layouts
+      @include span-columns(4, 12)
+    .stylesheets-sass-compass
+      @include span-columns(4, 12)
+    .compass-plugins
+      @include span-columns(4 omega, 12)
+  .moreinfo
+    @include span-columns(4 omega, 16)
 
 
 
