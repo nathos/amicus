@@ -33,12 +33,11 @@ header, #main-content, footer
 // Automatically reset the grid width & re-apply the grid background
 // to responsive layouts.
 $layouts: $break-tablet, $break-desktop, $break-huge
-@if $show-grid-backgrounds == true
-  @each $layout in $layouts
-    @include at-breakpoint($layout)
-      .container
-        @include set-container-width
-        @include susy-grid-background
+@each $layout in $layouts
+  @include at-breakpoint($layout)
+    .container
+      @include set-container-width
+      @include susy-grid-background
 
 @include at-breakpoint($break-tablet)
   .features
