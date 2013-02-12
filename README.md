@@ -2,18 +2,11 @@
 
 ## What is it?
 
-Middleman Bootstrap is my clean project starting point for the [Middleman](http://middlemanapp.com/) static site renderer. It includes [HTML5 Boilerplate](http://html5boilerplate.com/), [Haml](http://haml-lang.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), [Susy](http://susy.oddbird.net/) grid system, and lots of best practices.
+Middleman Bootstrap is a clean project starting point for the [Middleman](http://middlemanapp.com/) static site generator. It uses [HTML5 Boilerplate](http://html5boilerplate.com/), [Haml](http://haml-lang.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), [Susy](http://susy.oddbird.net/) grid system, and lots of best practices.
 
-<!-- 
-## Now it's Responsive!
+## It's Responsive!
 
-Middleman Bootstrap now comes with a Mobile-first Responsive grid system by default. Inspired by [320 and up](http://www.stuffandnonsense.co.uk/projects/320andup/) and [320+Susy](http://susy.oddbird.net/susy320/), the basic skeleton for a fully responsive layout is ready for you to use in your projects.
-
-Put your responsive grid declarations in the ```/stylesheets/grid/media/``` partials, and your width-specific styles in the ```/stylesheets/media/``` partials. Remember, it's mobile-first, so your styles cascade *up* with larger browser widths. 
--->
-
-NOTE: The responsive template has been temporarily removed until it can be refactored to work with Susy 1.0. A fixed-width 
-
+Middleman Bootstrap now comes with a mobile-first responsive grid system by default (see ```source/stylesheets/grid/_magic.sass```). Based on the [Susy "Magic" grid system](http://susy.oddbird.net/demos/magic/), it's ready to customize for your projects.
 
 ## How do I use it?
 
