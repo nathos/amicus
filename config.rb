@@ -64,8 +64,15 @@ helpers do
   end
 
   # Holder.js image placeholder helper
-  def img_holder(width, height)
-    "<img data-src='holder.js/#{width}x#{height}'>"
+  def img_holder(opts = {})
+    return "" unless opts[:width] && opts[:height]
+    return "" unless opts[:width].to_s =~ /^\d+$/ && opts[:height].to_s =~ /^\d+$/
+
+    img = "<img data-src='holder.js/#{opts[:width]}x#{opts[:height]}"
+    img = "#{img}/#{opts[:bgcolor]}:#{opts[:fgcolor]}" if opts[:fgcolor] && opts[:bgcolor]
+    img = "#{img}'>"
+
+    img
   end
 
 end
