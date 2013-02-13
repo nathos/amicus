@@ -24,7 +24,7 @@ git clone http://github.com/nathos/amicus.git my_new_project
 
 Finally, do a ```bundle install``` to install the required gems -- even Middleman itself!
 
-Use ```middleman``` to do your live development and ```middleman build``` to render your static file output to the ```/build/``` directory. 
+Use ```middleman``` to do your live development and ```middleman build``` to render your static file output to the ```/build/``` directory.
 
 For full Middleman documentation, visit the [Middleman website](http://middlemanapp.com/).
 
@@ -46,7 +46,7 @@ Easy peasy!
 
 The default [Haml](http://haml-lang.com/) layout is based on [HTML5 Boilerplate](http://html5boilerplate.com/), and is fully commented. (Don't worry, those comments aren't rendered out to your build directory)
 
-[Susy](http://susy.oddbird.net/) is the default grid system. 
+[Susy](http://susy.oddbird.net/) is the default grid system.
 
 An included Ruby helper method to generate image placeholders, powered by [Holder.js](http://imsky.github.com/holder/).
 
@@ -58,7 +58,7 @@ Send me a [message](https://github.com/nathos) or submit an [issue](https://gith
 
 ## License
 
-Following the lead of [HTML5 Boilerplate](https://github.com/paulirish/html5-boilerplate) here...
+Following the lead of [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate) here...
 
 Major components:
 
