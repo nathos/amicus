@@ -2,7 +2,7 @@
 
 ## What is it?
 
-Amicus is a clean project starting point for the [Middleman](http://middlemanapp.com/) static site generator. It uses [HTML5 Boilerplate](http://html5boilerplate.com/), [Haml](http://haml-lang.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), [Susy](http://susy.oddbird.net/) grid system, and lots of best practices.
+Amicus is a clean project starting point for the [Middleman](http://middlemanapp.com/) static site generator. It features [HTML5 Boilerplate](http://html5boilerplate.com/), [Haml](http://haml-lang.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), [Susy](http://susy.oddbird.net/) grid system, and lots of best practices.
 
 ## It's Responsive!
 
@@ -33,7 +33,7 @@ For full Middleman documentation, visit the [Middleman website](http://middleman
 
 Middleman now supports project templates. To use Middleman Bootstrap as a template, clone the Git repository into ```~/.middleman```, like so:
 
-```git clone http://github.com/nathos/middleman-bootstrap.git ~/.middleman/amicus```
+```git clone http://github.com/nathos/amicus.git ~/.middleman/amicus```
 
 then use the new template argument for the ```middleman init``` command:
 
