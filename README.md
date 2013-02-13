@@ -1,12 +1,12 @@
-# Middleman Bootstrap
+# Amicus
 
 ## What is it?
 
-Middleman Bootstrap is a clean project starting point for the [Middleman](http://middlemanapp.com/) static site generator. It uses [HTML5 Boilerplate](http://html5boilerplate.com/), [Haml](http://haml-lang.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), [Susy](http://susy.oddbird.net/) grid system, and lots of best practices.
+Amicus is a clean project starting point for the [Middleman](http://middlemanapp.com/) static site generator. It features [HTML5 Boilerplate](http://html5boilerplate.com/), [Haml](http://haml-lang.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), [Susy](http://susy.oddbird.net/) grid system, and lots of best practices.
 
 ## It's Responsive!
 
-Middleman Bootstrap now comes with a mobile-first responsive grid system by default (see ```source/stylesheets/grid/_magic.sass```). Based on the [Susy "Magic" grid system](http://susy.oddbird.net/demos/magic/), it's ready to customize for your projects.
+Amicus now comes with a mobile-first responsive grid system by default (see ```source/stylesheets/grid/_magic.sass```). Based on the [Susy "Magic" grid system](http://susy.oddbird.net/demos/magic/), it's ready to customize for your projects.
 
 ## How do I use it?
 
@@ -16,10 +16,10 @@ Start by installing [Bundler](http://gembundler.com/), if you don't already have
 gem install bundler
 ```
 
-Then just download the [latest source](https://github.com/nathos/middleman-bootstrap/archives/master) or if you prefer, clone the bootstrap repository down to your local machine:
+Then just download the [latest source](https://github.com/nathos/amicus/archives/master) or if you prefer, clone the bootstrap repository down to your local machine:
 
 ```
-git clone http://github.com/nathos/middleman-bootstrap.git my_new_project
+git clone http://github.com/nathos/amicus.git my_new_project
 ```
 
 Finally, do a ```bundle install``` to install the required gems -- even Middleman itself!
@@ -33,11 +33,11 @@ For full Middleman documentation, visit the [Middleman website](http://middleman
 
 Middleman now supports project templates. To use Middleman Bootstrap as a template, clone the Git repository into ```~/.middleman```, like so:
 
-```git clone http://github.com/nathos/middleman-bootstrap.git ~/.middleman/mm-bootstrap```
+```git clone http://github.com/nathos/amicus.git ~/.middleman/amicus```
 
 then use the new template argument for the ```middleman init``` command:
 
-```middleman init my_new_project --template=mm-bootstrap```
+```middleman init my_new_project --template=amicus```
 
 Easy peasy!
 
@@ -48,10 +48,12 @@ The default [Haml](http://haml-lang.com/) layout is based on [HTML5 Boilerplate]
 
 [Susy](http://susy.oddbird.net/) is the default grid system. 
 
+An included Ruby helper method to generate image placeholders, powered by [Holder.js](http://imsky.github.com/holder/).
+
 
 ## Comments & Suggestions?
 
-Send me a [message](https://github.com/nathos) or submit an [issue](https://github.com/nathos/middleman-bootstrap/issues). Thanks!
+Send me a [message](https://github.com/nathos) or submit an [issue](https://github.com/nathos/amicus/issues). Thanks!
 
 
 ## License
