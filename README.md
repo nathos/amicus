@@ -1,4 +1,4 @@
-# Amicus
+# Amicus: your expert toolkit for rapid web prototyping
 
 ## What is it?
 
