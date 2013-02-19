@@ -68,10 +68,8 @@ Major components:
 * YUI Profiling: BSD license
 * HTML5Doctor CSS reset: Public Domain
 * CSS Reset Reloaded: Public Domain
-* Blueprint CSS: MIT license
-* 960.gs: MIT/GPL license
 * Susy: MIT license
 
 Everything else:
 
-* [The Unlicense](http://unlicense.org/) (aka: public domain)
+* MIT License -- see LICENSE.md
