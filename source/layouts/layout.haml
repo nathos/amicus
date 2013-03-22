@@ -10,7 +10,7 @@
     %meta{'http-equiv' => "X-UA-Compatible", :content =>"IE=edge,chrome=1"}
 
     -# Pull in the page title
-    %title= @title
+    %title= current_page.data.title
 
     %meta{:name => "description", :content => ""}
     %meta{:name => "author", :content => ""}
@@ -22,13 +22,13 @@
     = stylesheet_link_tag "screen"
     = javascript_include_tag "libs/modernizr-2.6.1.min"
 
-  %body{:class => "#{@bodyclass}"}
+  %body{:class => current_page.data.bodyclass}
     /[if lt IE 7]
       %p.chromeframe
         You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.
     .container
       %header
-        %h1= @title
+        %h1= current_page.data.title
       #main-content{:role => "main"}
 
         -# Page content gets rendered here
