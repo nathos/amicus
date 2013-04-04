@@ -62,14 +62,12 @@ Following the lead of [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerpl
 
 Major components:
 
+* HTML5 Boilerplate: MIT license
+* Normalize.css: MIT license
 * Modernizr: MIT/BSD license
 * jQuery: MIT/GPL license
-* Respond.js: MIT/GPL license
-* YUI Profiling: BSD license
-* HTML5Doctor CSS reset: Public Domain
-* CSS Reset Reloaded: Public Domain
 * Susy: MIT license
 
 Everything else:
 
-* MIT License -- see LICENSE.md
+* MIT license -- see LICENSE.md
