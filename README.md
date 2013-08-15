@@ -71,3 +71,5 @@ Major components:
 Everything else:
 
 * MIT license -- see LICENSE.md
+
+* Thanks to dbag69xXx420 for tweaks.
