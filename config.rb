@@ -89,6 +89,11 @@ end
 
 # Build-specific configuration
 configure :build do
+  
+# Requires middleman-favicon-maker		
+  activate :favicon_maker,
+    :favicon_maker_base_image => "favicon_base.svg"
+    
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
