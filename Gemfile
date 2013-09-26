@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem "middleman", "~> 3.1.3"
 gem "middleman-deploy"
+gem "middleman-favicon-maker", "~> 3.2"
 
 # Compass plugins
 gem 'susy', "~> 1.0.9" # Susy
