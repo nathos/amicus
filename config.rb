@@ -89,6 +89,11 @@ end
 
 # Build-specific configuration
 configure :build do
+  
+# Requires middleman-favicon-maker		
+  activate :favicon_maker,
+    :favicon_maker_base_image => "favicon_base.svg"
+    
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
@@ -109,3 +114,16 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+# Requires middleman-deploy and rsync
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.user   = "example"
+  deploy.host   = "www.example.com"
+  deploy.path   = "/public_html"
+  # Optional Settings
+  deploy.port  = 22 # ssh port, default: 22
+  deploy.clean = true # remove orphaned files on remote host, default: false
+  deploy.build_before = true # default: false
+end
+
