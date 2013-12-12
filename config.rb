@@ -127,3 +127,5 @@ end
 #   deploy.build_before = true # default: false
 # end
 
+# Skip locale validation (and validation warnings)
+I18n.enforce_available_locales = false
