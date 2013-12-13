@@ -87,6 +87,9 @@ end
 # Change the images directory
 # set :images_dir, "alternative_image_directory"
 
+# Change the fonts directory
+# set :fonts_dir,  "alternative_fonts_directory"
+
 # Build-specific configuration
 configure :build do
 
