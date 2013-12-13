@@ -18,6 +18,8 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.9.3)
+    font-awesome-middleman (4.0.3)
+      middleman (>= 3.0.0)
     fssm (0.2.10)
     haml (4.0.4)
       tilt
@@ -87,6 +89,7 @@ PLATFORMS
 DEPENDENCIES
   compass (~> 0.12.2)
   compass-h5bp (~> 0.1.2)
+  font-awesome-middleman (~> 4.0.3)
   middleman (~> 3.2.0)
   susy (~> 1.0.9)
   wdm (~> 0.1.0)
