@@ -29,9 +29,9 @@
     = javascript_include_tag "libs/modernizr-2.7.1.min"
 
   %body{:class => current_page.data.bodyclass}
-    /[if lt IE 7]
-      %p.chromeframe
-        You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.
+    /[if lt IE 8]
+      %p.browsehappy
+        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     .container
       %header
         %h1= current_page.data.title
