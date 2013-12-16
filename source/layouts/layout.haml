@@ -7,7 +7,7 @@
   <!--<![endif]-->
   %head
     %meta{:charset => "utf-8"}
-    %meta{'http-equiv' => "X-UA-Compatible", :content =>"IE=edge,chrome=1"}
+    %meta{'http-equiv' => "X-UA-Compatible", :content =>"IE=edge"}
 
     -# Pull in the page title
     %title= current_page.data.title
@@ -17,13 +17,7 @@
     -# You may wish to remove the 'initial scale=1.0' for non-responsive layouts
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
 
-    -# Place favicon.ico and apple-touch-icon.png in the root directory
-    %link{ rel: "apple-touch-icon", sizes: "144x144", href: "apple-touch-icon-144x144-precomposed.png" }
-    %link{ rel: "apple-touch-icon", sizes: "114x114", href: "apple-touch-icon-114x114-precomposed.png" }
-    %link{ rel: "apple-touch-icon", sizes: "72x72", href: "apple-touch-icon-72x72-precomposed.png" }
-    %link{ rel: "apple-touch-icon", href: "apple-touch-icon-precomposed.png" }
-    %link{ rel: "shortcut icon", href: "favicon.png" }
-    %link{ rel: "icon", type: "image/ico", href: "favicon.ico" }
+    -# Place favicon.ico and apple-touch-icon(s) in the root directory
 
     = stylesheet_link_tag "screen"
     = javascript_include_tag "libs/modernizr-2.7.1.min"
@@ -52,9 +46,10 @@
     = javascript_include_tag "plugins", "script"
 
     -# Google Analytics: change UA-XXXXX-X to be your site's ID.
-    -# uncomment when deploying
     -# :javascript
-      -# var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      -# (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      -# g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      -# s.parentNode.insertBefore(g,s)}(document,'script'));
+      -# (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      -# function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      -# e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      -# e.src='//www.google-analytics.com/analytics.js';
+      -# r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      -# ga('create','UA-XXXXX-X');ga('send','pageview');
