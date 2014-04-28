@@ -1,17 +1,16 @@
 source "https://rubygems.org"
 
-gem "middleman", "~> 3.2.0"
+gem "middleman", "~> 3.3.2"
 # gem "middleman-deploy"
 # gem "middleman-favicon-maker", "~> 3.2"
 
-gem "compass", "~> 0.12.2"
+gem "compass", "~> 0.12.6"
 
 # Compass plugins
-gem "susy", "~> 1.0.9"
-gem "compass-h5bp", "~> 0.1.2" # HTML5 Boilerplate styles
+gem "susy", "~> 2.1.1"
 
 # Font Awesome icons
-gem "font-awesome-middleman", "~> 4.0.3"
+# gem "font-awesome-middleman", "~> 4.0.3"
 
 # Javascript
 # gem "therubyracer"
