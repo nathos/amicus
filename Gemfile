@@ -4,7 +4,7 @@ gem "middleman", "~> 3.3.2"
 # gem "middleman-deploy"
 # gem "middleman-favicon-maker", "~> 3.2"
 
-gem "compass", "~> 0.12.6"
+gem "compass", "~> 1.0.0.alpha.19"
 
 # Compass plugins
 gem "susy", "~> 2.1.1"
