@@ -94,7 +94,7 @@ GEM
     sprockets-sass (1.1.0)
       sprockets (~> 2.0)
       tilt (~> 1.1)
-    susy (2.1.1)
+    susy (2.1.2)
       sass (~> 3.3.0)
     thor (0.19.1)
     thread_safe (0.3.3)
@@ -111,5 +111,5 @@ PLATFORMS
 DEPENDENCIES
   compass (~> 1.0.0.alpha.19)
   middleman (~> 3.3.2)
-  susy (~> 2.1.1)
+  susy (~> 2.1.2)
   wdm (~> 0.1.0)
