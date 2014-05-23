@@ -4,10 +4,8 @@ gem "middleman", "~> 3.3.2"
 # gem "middleman-deploy", "~> 0.2.3"
 # gem "middleman-favicon-maker", "~> 3.5.3"
 
-gem "compass", "~> 1.0.0.alpha.19"
-
-# Compass plugins
-gem "susy", "~> 2.1.2"
+gem "bourbon", "~> 4.0.2"
+gem "neat", "~> 1.6.0"
 
 # Font Awesome icons
 # gem "font-awesome-middleman", "~> 4.1.1"

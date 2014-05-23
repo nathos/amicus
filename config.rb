@@ -1,16 +1,4 @@
 ###
-# Compass
-###
-
-# Susy grids in Compass
-require 'susy'
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
 # Haml
 ###
 
@@ -96,9 +84,6 @@ configure :build do
   # Requires middleman-favicon-maker
   # activate :favicon_maker,
   #   :favicon_maker_base_image => "favicon_base.svg"
-
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
 
   # Minify Javascript on build
   # activate :minify_javascript
