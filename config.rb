@@ -66,17 +66,17 @@ helpers do
 
 end
 
-# Change the CSS directory
-# set :css_dir, "alternative_css_directory"
+# CSS directory
+set :css_dir, "stylesheets"
 
-# Change the JS directory
-# set :js_dir, "alternative_js_directory"
+# JS directory
+set :js_dir, "javascripts"
 
-# Change the images directory
-# set :images_dir, "alternative_image_directory"
+# Images directory
+set :images_dir, "images"
 
-# Change the fonts directory
-# set :fonts_dir,  "alternative_fonts_directory"
+# Fonts directory
+set :fonts_dir,  "fonts"
 
 # Reload the browser automatically whenever files change
 configure :development do
