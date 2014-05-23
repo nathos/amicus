@@ -10,7 +10,11 @@ gem "neat", "~> 1.6.0"
 # Font Awesome icons
 # gem "font-awesome-middleman", "~> 4.1.1"
 
-### Windows specific gems ###
-platforms :mswin, :mingw do
-   gem "wdm", "~> 0.1.0" # Windows Directory Monitor
-end
+# Live-reloading plugin
+gem "middleman-livereload", "~> 3.3.3"
+
+# For faster file watcher updates on Windows:
+gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
+
+# Windows does not come with time zone data
+gem "tzinfo-data", :platforms => [:mswin, :mingw]

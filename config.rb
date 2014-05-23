@@ -78,6 +78,11 @@ end
 # Change the fonts directory
 # set :fonts_dir,  "alternative_fonts_directory"
 
+# Reload the browser automatically whenever files change
+configure :development do
+  activate :livereload
+end
+
 # Build-specific configuration
 configure :build do
 
