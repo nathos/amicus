@@ -10,10 +10,6 @@ gem "neat", "~> 1.6.0"
 # Font Awesome icons
 # gem "font-awesome-middleman", "~> 4.1.1"
 
-# Javascript
-# gem "therubyracer"
-# gem "therubyrhino"
-
 ### Windows specific gems ###
 platforms :mswin, :mingw do
    gem "wdm", "~> 0.1.0" # Windows Directory Monitor
