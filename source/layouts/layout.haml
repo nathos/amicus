@@ -1,20 +1,20 @@
 !!! 5
-%html{class: "no-js", lang: ""}
+%html{ class: 'no-js', lang: '' }
   %head
-    %meta{ charset: "utf-8" }
-    %meta{ :'http-equiv' => "X-UA-Compatible", content: "IE=edge" }
+    %meta{ charset: 'utf-8' }
+    %meta{ :'http-equiv' => 'X-UA-Compatible', content: 'IE=edge' }
 
     -# Pull in the page title
     %title= current_page.data.title
 
-    %meta{ name: "description", content: "" }
+    %meta{ name: 'description', content: '' }
     -# You may wish to remove the 'initial scale=1.0' for non-responsive layouts
-    %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
 
     -# Place favicon.ico and apple-touch-icon(s) in the root directory
 
-    = stylesheet_link_tag "main"
-    = javascript_include_tag "libs/modernizr-2.8.0.min"
+    = stylesheet_link_tag 'main'
+    = javascript_include_tag 'libs/modernizr-2.8.0.min'
 
   %body{class: current_page.data.bodyclass}
     /[if lt IE 8]
@@ -30,14 +30,14 @@
       %footer
         %p &copy; #{copyright_years(2011)} AmicusUser
 
-    = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'
     :javascript
       window.jQuery || document.write('<script src="/javascripts/vendor/jquery-1.11.1.min.js"><\/script>')
 
     -# Holder.js - canvas-generated placeholder images for prototyping
-    = javascript_include_tag "vendor/holder-2.3.2"
+    = javascript_include_tag 'vendor/holder-2.3.2'
 
-    = javascript_include_tag "plugins", "script"
+    = javascript_include_tag 'plugins', 'script'
 
     -# Google Analytics: change UA-XXXXX-X to be your site's ID.
     // :javascript
