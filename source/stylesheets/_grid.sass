@@ -1,0 +1,8 @@
+.container
+  @include outer-container
+
+.features
+  .feature
+    @include media(480px)
+      @include span-columns(6)
+      @include omega(2n)

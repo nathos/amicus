@@ -14,7 +14,7 @@
     -# Place favicon.ico and apple-touch-icon(s) in the root directory
 
     = stylesheet_link_tag 'main'
-    = javascript_include_tag 'libs/modernizr-2.8.0.min'
+    = javascript_include_tag 'vendor/modernizr-2.8.0.min'
 
   %body{class: current_page.data.bodyclass}
     /[if lt IE 8]
@@ -23,7 +23,7 @@
     .container
       %header
         %h1= current_page.data.title
-      #main-content
+      %main#main-content
         -# Page content gets rendered here
         = yield
 

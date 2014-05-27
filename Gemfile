@@ -1,6 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 3.3.3'
+# Switched to `middleman-core` dependency to avoid loading Compass
+gem 'middleman-core', '~> 3.3.3'
+gem 'middleman-sprockets', '~> 3.3.3'
+gem 'execjs', '~> 2.0'
+gem 'haml', '~> 4.0.5'
+gem 'kramdown', '~> 1.3.3'
+gem 'sass', '~> 3.3.7'
+gem 'uglifier', '~> 2.5.0'
+
 # gem 'middleman-deploy', '~> 0.2.3'
 # gem 'middleman-favicon-maker', '~> 3.5.3'
 

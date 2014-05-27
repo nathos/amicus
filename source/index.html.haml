@@ -9,31 +9,31 @@ bodyclass: newproject
 
 
 .features
-  .views-layouts
+  %section.feature.views-layouts
     :markdown
       ### Views & Layouts
 
       Your source files are stored in the <kbd>source</kbd> folder. The main layout
       file for this project is <kbd>source/layout.haml</kbd>.
-  .stylesheets-sass-compass
+  %section.feature.stylesheets-sass-compass
     :markdown
       ### Stylesheets, Sass &amp; Compass
 
       This project is pre-configured for [Sass](http://sass-lang.com) and
       [Compass](http://compass-style.org). Store your <kbd>sass</kbd> and
       <kbd>scss</kbd> files in the <kbd>source/stylesheets</kbd> directory.
-  .compass-plugins
+  %section.feature.compass-plugins
     :markdown
       ### Compass Plugins
 
       Amicus includes support for [Susy](http://susy.oddbird.net/) by default.
 
-.moreinfo
-  :markdown
-    ### For More Info…
+  %section.feature.moreinfo
+    :markdown
+      ### For More Info…
 
-    * on the Susy grid system, check out [the official site](http://susy.oddbird.net/).
+      * on the Susy grid system, check out [the official site](http://susy.oddbird.net/).
 
-  = img_holder( width: 300, height: 200, bgcolor: '#0c0', fgcolor: '#fff', text: %q|I'm an image placeholder!| )
+    = img_holder( width: 300, height: 200, bgcolor: '#0c0', fgcolor: '#fff', text: %q|I'm an image placeholder!| )
 
 
