@@ -20,10 +20,11 @@
     /[if lt IE 8]
       %p.browsehappy
         You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
-    .container
-      %header
+    %header
+      .container
         %h1= current_page.data.title
-      %main#main-content
+    %main#main-content
+      .container
         -# Page content gets rendered here
         = yield
 
