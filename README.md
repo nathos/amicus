@@ -16,7 +16,7 @@ Start by installing [Bundler](http://gembundler.com/), if you don't already have
 gem install bundler
 ```
 
-Then just download the [latest source](https://github.com/nathos/amicus/archives/master) or if you prefer, clone the repository down to your local machine:
+Then just download the [latest source](https://github.com/nathos/amicus/archive/master.zip) or if you prefer, clone the repository down to your local machine:
 
 ```
 git clone http://github.com/nathos/amicus.git my_new_project
